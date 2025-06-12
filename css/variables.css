@@ -1,0 +1,11 @@
+:root {
+  /* 컬러 변수 */
+  --body-text: #111111;
+  --gray-text: #898989;
+  --border: #dcdcdc;
+  --white: #ffffff;
+  --black: #000000;
+  --green: #007a8f;
+  --dark-green: #2b3a42;
+  --sand: #f1d2b5;
+}
