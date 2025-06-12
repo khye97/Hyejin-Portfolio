@@ -1,3 +1,4 @@
+// header 스크롤 애니메이션
 $(window).on("scroll", function () {
   let scrollTop = $(this).scrollTop();
 
@@ -6,4 +7,9 @@ $(window).on("scroll", function () {
   } else if (scrollTop < 80) {
     $("header").removeClass("active");
   }
+});
+
+// intro text-wrap 애니메이션
+$(window).on("load", function () {
+  $(".intro-text-wrap").addClass("load");
 });
