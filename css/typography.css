@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "NoonnuBasicGothicRegular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* font-family */
+  --body-font: "Noto Sans KR", "Noto Sans", sans-serif;
+  --title-font-en: "Raleway", sans-serif;
+  --title-font-kr: "NoonnuBasicGothicRegular";
+
+  /* font-size */
+  --section-title: 50px;
+  --body-font-size: 16px;
+}
