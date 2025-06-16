@@ -2,6 +2,7 @@
 .inner {
   margin: 0 auto;
   max-width: 1280px;
+  padding: 0 10px;
 }
 
 section {
@@ -238,4 +239,38 @@ section {
 .about .about-date {
   width: 185px;
   color: var(--gray-text);
+}
+
+/* Skills */
+.skills {
+  background-color: var(--background);
+}
+
+.skills .skills-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skills .skill-item {
+  background-color: var(--white);
+  padding: 55px;
+  border-radius: 8px;
+}
+
+.skills .svg-wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skills .svg-wrap img {
+  width: 60px;
+}
+
+.skills .skill-name {
+  font-family: var(--title-font-en);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
