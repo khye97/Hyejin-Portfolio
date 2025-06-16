@@ -115,12 +115,12 @@ section {
 
 /* Intro */
 .intro {
-  display: none;
   position: relative;
   background: url(/image/background-main.jpg) no-repeat center/cover;
   width: 100%;
   height: 800px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .intro::before {
@@ -167,4 +167,75 @@ section {
 .intro .intro-desc {
   color: var(--white);
   margin-bottom: 5px;
+}
+
+/* About */
+.about .inner {
+  width: 1000px;
+}
+
+.about .about-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about .profile-wrap,
+.about .education,
+.about .certificate {
+  border-left: 4px solid var(--dark-green);
+  padding-left: 30px;
+}
+
+.about .avatar-wrap {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.about .avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about .profile-wrap .name {
+  font-size: 30px;
+  color: var(--green);
+  font-weight: 400;
+}
+
+.about .profile-wrap .name-en {
+  font-size: 20px;
+}
+
+.about .background-desc {
+  display: block;
+  font-family: var(--title-font-kr);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: var(--dark-green);
+}
+
+.about .education {
+  margin-bottom: 40px;
+}
+
+.about .education-title,
+.about .certificate-title {
+  font-size: 30px;
+  color: var(--dark-green);
+  margin-bottom: 15px;
+}
+
+.about .background-item {
+  display: flex;
+}
+
+.about .about-date {
+  width: 185px;
+  color: var(--gray-text);
 }
