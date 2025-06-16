@@ -5,7 +5,7 @@
   }
 
   section {
-    padding: 50px 10px;
+    padding: 50px 0;
   }
 
   /* Header */
@@ -96,15 +96,6 @@
     font-size: 45px;
   }
 
-  /* About */
-  /* .about .inner {
-    width: auto;
-  } */
-
-  .about .about-wrap {
-    /* justify-content: flex-start; */
-  }
-
   .about .avatar-wrap {
     width: 160px;
     height: 160px;
@@ -118,6 +109,15 @@
   .about .education-title,
   .about .certificate-title {
     font-size: 22px;
+  }
+
+  /* Skills */
+  .skills .skills-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills .skill-item {
+    padding: 45px;
   }
 }
 
@@ -179,6 +179,15 @@
   .about .education-title,
   .about .certificate-title {
     font-size: 20px;
+  }
+
+  /* Skills */
+  .skills .skills-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills .skill-item {
+    padding: 35px;
   }
 }
 
@@ -244,5 +253,14 @@
   .about .education-title,
   .about .certificate-title {
     font-size: 20px;
+  }
+
+  /* Skills */
+  .skills .skills-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .skills .skill-item {
+    padding: 35px;
   }
 }
