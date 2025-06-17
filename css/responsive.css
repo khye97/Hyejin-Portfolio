@@ -148,6 +148,11 @@
   .portfolio .portfolio-info-wrap {
     margin-bottom: 0;
   }
+
+  /* Outro */
+  .outro {
+    height: 550px;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -230,6 +235,11 @@
 
   .portfolio .portfolio-content-wrap {
     flex-direction: column;
+  }
+
+  /* Outro */
+  .outro {
+    height: 500px;
   }
 }
 
@@ -342,5 +352,14 @@
   .portfolio .portfolio-link,
   .portfolio .portfolio-detail-link {
     gap: 8px;
+  }
+
+  /* Outro */
+  .outro {
+    height: 450px;
+  }
+
+  .outro .outro-desc {
+    font-size: 14px;
   }
 }
