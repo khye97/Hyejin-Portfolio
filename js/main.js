@@ -1,6 +1,6 @@
 // header 스크롤 애니메이션
 function scrollHeader() {
-  if (window.matchMedia("screen and (min-width: 1024px)").matches) {
+  if (window.matchMedia("screen and (min-width: 1025px)").matches) {
     let scrollTop = $(this).scrollTop();
 
     if (scrollTop >= 80) {
@@ -52,4 +52,14 @@ $(window).on("load", function () {
 $(".header-item a").on("click", function () {
   $(".header").removeClass("mobile-active");
   $(".nav").removeClass("active");
+});
+
+// portfolio tab 메뉴
+$(".portfolio .tab").on("click", function () {
+  $(".portfolio .tab.active").removeClass("active");
+  $(this).addClass("active");
+
+  let tabName = $(this).data("tab");
+  $(".tabpanel-wrap.active").removeClass("active");
+  $(`.tabpanel-wrap[data-tab-panel=${tabName}]`).addClass("active");
 });
