@@ -336,8 +336,11 @@ section {
   display: block;
 }
 
-.portfolio .portfolio-summary-wrap {
-  flex-shrink: 0;
+.portfolio .portfolio-title {
+  font-family: var(--title-font-en);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .portfolio .portfolio-content-wrap {
@@ -345,11 +348,8 @@ section {
   gap: 60px;
 }
 
-.portfolio .portfolio-title {
-  font-family: var(--title-font-en);
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 30px;
+.portfolio .portfolio-summary-wrap {
+  flex-shrink: 0;
 }
 
 .portfolio .portfolio-info-wrap,
@@ -369,6 +369,10 @@ section {
 .portfolio .portfolio-link-wrap .title {
   display: block;
   color: var(--gray-text);
+}
+
+.portfolio .portfolio-info-wrap .desc {
+  display: block;
 }
 
 .portfolio .portfolio-link,
